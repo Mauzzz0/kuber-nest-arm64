@@ -1,4 +1,4 @@
-project: werf-first-app
+project: kuber-nest
 configVersion: 1
 
 ---
