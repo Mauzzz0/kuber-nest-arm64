@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: werf-first-app
+  name: kuber-nest
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: werf-first-app
+      app: kuber-nest
   template:
     metadata:
       labels:
-        app: werf-first-app
+        app: kuber-nest
     spec:
       imagePullSecrets:
         - name: registrysecret
