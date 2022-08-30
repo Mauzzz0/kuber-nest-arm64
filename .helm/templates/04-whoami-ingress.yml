@@ -1,18 +1,15 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  annotations:
-    kubernetes.io/ingress.class: nginx
-  name: werf-first-app
+  name: whoami-ingress
 spec:
   rules:
-    - host: werf-first-app.test
-      http:
+    - http:
         paths:
           - path: /
             pathType: Prefix
             backend:
               service:
-                name: werf-first-app
+                name: whoami
                 port:
-                  number: 3000
+                  name: web
