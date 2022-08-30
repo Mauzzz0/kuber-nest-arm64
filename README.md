@@ -19,7 +19,7 @@ Of course if you are not forgot to add `127.0.0.1 domain.com` to `/etc/hosts`
     - [X] Деплой минимального nest сервера с доступностью/ответами и без ошибок
       - Не забыть указать `export DOCKER_DEFAULT_PLATFORM=linux/amd64`
 - [ ] PostgreSQL
-    - [ ] Сам чарт k8s [(PR #2)](https://github.com/Mauzzz0/kuber-nest-arm64/pull/2)
+    - [X] Сам чарт k8s [(PR #2)](https://github.com/Mauzzz0/kuber-nest-arm64/pull/2)
     - [ ] Поддержка в NestJS
     - [ ] PgAdmin
 - [ ] RabbitMQ
