@@ -1,0 +1,58 @@
+{
+  "name": "nest-kuber",
+  "author": "Mauzzz0",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "scripts": {
+    "start": "nest start",
+    "converge": "bash ./integration/start-services.sh"
+  },
+  "dependencies": {
+    "@nestjs/axios": "^0.0.7",
+    "@nestjs/cli": "^8.0.0",
+    "@nestjs/common": "^8.0.0",
+    "@nestjs/config": "^1.0.1",
+    "@nestjs/core": "^8.0.0",
+    "@nestjs/platform-express": "^8.4.3",
+    "@nestjs/schematics": "^8.0.0",
+    "@nestjs/swagger": "^5.0.9",
+    "class-transformer": "0.5.1",
+    "class-validator": "^0.13.1",
+    "cross-env": "^7.0.3",
+    "reflect-metadata": "^0.1.13",
+    "swagger-ui-express": "^4.5.0",
+    "ts-node": "^10.7.0",
+    "typeorm": "^0.2.31"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^16.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.28.2",
+    "@typescript-eslint/parser": "^4.28.2",
+    "eslint": "^7.30.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "^2.3.2",
+    "tsconfig-paths": "^3.10.1",
+    "typescript": "^4.3.5"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testRegex": ".*\\.spec\\.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "collectCoverageFrom": [
+      "**/*.(t|j)s"
+    ],
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  }
+}
