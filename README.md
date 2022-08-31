@@ -25,7 +25,9 @@
 - [ ] PostgreSQL
     - [X] Сам чарт k8s [(PR #2)](https://github.com/Mauzzz0/kuber-nest-arm64/pull/2)
     - [ ] Поддержка в NestJS
-    - [ ] PgAdmin
+    - [X] PgAdmin [(PR #5)](https://github.com/Mauzzz0/kuber-nest-arm64/pull/5)
+    - (`admin@admin.com` / `admin@admin.com`)
+    - [ ] Автоматическое определение текущего Cluster Ip Address
 - [ ] RabbitMQ
     - [ ] Сам чарт k8s
         - [ ] RabbitMQ dashboard
