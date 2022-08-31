@@ -1,12 +1,16 @@
-## Description
+## Описание
 
-The boilerplate for next projects and commit-story of how Ruslan is tried to launch k8s cluster on local machine with Apple M1 Pro (arm64) with broken ingress-nginx-controller and one day minikube just started working fine on default settings. :((  
-Of course if you are not forgot to add `127.0.0.1 domain.com` to `/etc/hosts`
+Репозиторий для обучения Kubernetes.  
+Шаблон для будущих проектов.
 
 ## Команды
 `npm ci` - установка зависимостей из package-lock.json  
 `npm run start` - старт сервиса на 3000 порту  
-`npm run coverage` - запуск деплоя кластера на локальной машине  
+`npm run coverage` - запуск деплоя кластера на локальной машине    
+`minikube:delete` - полное удаление миникуба  
+`minikube:start` - запуск миникуба (driver=docker) и установка ингресса  
+`minikube:reinstall` - переустановка миникуба и ингресса  
+`minikube:tunnel` - проксирование запросов из 127.0.0.1 внутрь кластера  
 
 ## Roadmap
 - [X] Базовый деплой кластера
