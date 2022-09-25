@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rabbitmq
+  labels:
+    app: rabbitmq
+    tier: backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rabbitmq
+      tier: backend
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: rabbitmq
+        tier: backend
+    spec:
+      containers:
+        - image: rabbitmq:3-management
+          name: rabbitmq
+          env:
+            - name: RABBITMQ_DEFAULT_USER
+              value: admin
+            - name: RABBITMQ_DEFAULT_PASS
+              value: admin
+          ports:
+            - containerPort: 5672
+            - containerPort: 15672
+          volumeMounts:
+            - name: rabbitmq-vol
+              mountPath: /var/lib/rabbitmq
+      volumes:
+        - name: rabbitmq-vol
+          persistentVolumeClaim:
+            claimName: rabbitmq-pvc
