@@ -29,8 +29,8 @@
     - (`admin@admin.com` / `admin@admin.com`) ([Вход](.github/images/pgadmin.png))
     - [ ] Автоматическое определение текущего Cluster Ip Address
 - [ ] RabbitMQ
-    - [ ] Сам чарт k8s
-        - [ ] RabbitMQ dashboard
+    - [X] Сам чарт k8s [(PR #7)](https://github.com/Mauzzz0/kuber-nest-arm64/pull/7)
+        - [X] RabbitMQ dashboard [(PR #7)](https://github.com/Mauzzz0/kuber-nest-arm64/pull/7)
     - [ ] Поддержка в NestJS
         - [ ] Сидирование
         - [ ] Декораторы для producer
