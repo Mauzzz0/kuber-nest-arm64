@@ -1,3 +1,13 @@
 1) Redis caching
 https://blog.logrocket.com/add-redis-cache-nestjs-app/#implementing-redis-cache-nestjs-app
 https://www.tomray.dev/nestjs-caching-redis
+2) Graylog
+Дефолтный юзер для грейлога (web ui port 9000): admin
+https://github.com/Graylog2/docker-compose
+https://computingforgeeks.com/how-to-run-graylog-server-in-docker-containers/
+https://habr.com/ru/company/pixonic/blog/341274/
+Могучий индус (только по его гайду смогло всё запуститься -_-) https://www.youtube.com/watch?v=CIXCgx_c3WU
+Как войти: открыть localhost:9000, ввести admin@*парольизenv*,
+вверху system/inputs -> inputs -> GELF !!UDP!! + Launch new input
+Ставим порт 12111
+в ноде указываем порт 12111, всё должно запуститься
