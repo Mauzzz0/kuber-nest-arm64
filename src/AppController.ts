@@ -49,4 +49,9 @@ export class AppController {
     await sleep(2);
     return this.service.ping();
   }
+
+  @Get('/postgres-version')
+  async postgresVersion() {
+    return this.service.postgresVersion();
+  }
 }
