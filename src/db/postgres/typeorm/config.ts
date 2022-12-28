@@ -1,4 +1,3 @@
-import * as process from 'process';
 import { PostgresConnectionOptions } from 'typeorm/driver/postgres/PostgresConnectionOptions';
 
 const entities = [];
