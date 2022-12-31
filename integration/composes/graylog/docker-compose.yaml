@@ -37,8 +37,8 @@ services:
       GRAYLOG_NODE_ID_FILE: "/usr/share/graylog/data/config/node-id"
       GRAYLOG_PASSWORD_SECRET: "${GRAYLOG_PASSWORD_SECRET}"
       GRAYLOG_ROOT_PASSWORD_SHA2: "${GRAYLOG_ROOT_PASSWORD_SHA2}"
-      GRAYLOG_HTTP_BIND_ADDRESS: "0.0.0.0:9000"
-      GRAYLOG_HTTP_EXTERNAL_URI: "http://localhost:9000/"
+      GRAYLOG_HTTP_BIND_ADDRESS: "0.0.0.0:9100"
+      GRAYLOG_HTTP_EXTERNAL_URI: "http://localhost:9100/"
       GRAYLOG_ELASTICSEARCH_HOSTS: "http://opensearch:9200"
       GRAYLOG_MONGODB_URI: "mongodb://mongodb:27017/graylog"
       # To make reporting (headless_shell) work inside a Docker container
@@ -49,7 +49,7 @@ services:
       - "5140:5140/udp"   # Syslog UDP
       - "5555:5555/tcp"   # RAW TCP
       - "5555:5555/udp"   # RAW TCP
-      - "9000:9000/tcp"   # Server API
+      - "9100:9100/tcp"   # Server API    9100, потому что 9000 порт занят кликхаусом
       - "12201:12201/tcp" # GELF TCP
       - "12201:12201/udp" # GELF UDP
       - "12111:12111/udp" # GELF UDP Самолично добавленный порт по видосу индуса
