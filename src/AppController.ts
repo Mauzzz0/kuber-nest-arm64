@@ -54,4 +54,9 @@ export class AppController {
   async postgresVersion() {
     return this.service.postgresVersion();
   }
+
+  @Get('/clickhouse-version')
+  async clickhousePostgres() {
+    return this.service.clickhouseVersion();
+  }
 }
