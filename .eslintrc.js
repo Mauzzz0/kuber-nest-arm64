@@ -18,7 +18,7 @@ module.exports = {
     node: true,
     jest: true,
   },
-  ignorePatterns: ['.eslintrc.js'],
+  ignorePatterns: ['.eslintrc.js', 'smsc_api.js'],
   rules: {
     '@typescript-eslint/semi': 'off',
     '@typescript-eslint/interface-name-prefix': 0,

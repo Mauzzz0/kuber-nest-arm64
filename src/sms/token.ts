@@ -1,0 +1,1 @@
+export const SMS_GATEWAY_TOKEN = 'SMS_GATEWAY_TOKEN';

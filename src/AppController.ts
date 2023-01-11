@@ -1,4 +1,5 @@
 import {
+  Body,
   CACHE_MANAGER,
   CacheInterceptor,
   CacheKey,
@@ -6,11 +7,13 @@ import {
   Controller,
   Get,
   Inject,
+  Post,
   UseInterceptors,
 } from '@nestjs/common';
 import { AppService } from './AppService';
 import { Cache } from 'cache-manager';
 import { sleep } from './utils/sleep';
+import { SmsBody } from './sms/types';
 
 @Controller()
 export class AppController {
@@ -18,6 +21,11 @@ export class AppController {
     private readonly service: AppService,
     @Inject(CACHE_MANAGER) private cacheService: Cache,
   ) {}
+
+  @Post('/send-sms')
+  async sendSms(@Body() dto: SmsBody) {
+    return this.service.sendSms(dto);
+  }
 
   @Get('/ping')
   async ping() {

@@ -5,10 +5,12 @@ import * as redisStore from 'cache-manager-redis-store';
 import { APP_INTERCEPTOR } from '@nestjs/core';
 import { GraylogModule, GraylogService } from './graylog';
 import { DbModule } from './db/DbModule';
+import { SmsModule } from './sms/SmsModule';
 
 @Module({
   imports: [
     DbModule,
+    SmsModule,
     CacheModule.register({
       isGlobal: false,
       store: redisStore,
